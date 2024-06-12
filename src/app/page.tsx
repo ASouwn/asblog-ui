@@ -5,6 +5,7 @@ import Blog from "@/app/component/Blog";
 import Space from "@/app/component/Space";
 import Project from "@/app/component/Project";
 import Message from "@/app/component/Message";
+import Home from "@/app/component/Home";
 
 interface Item {
     en: String,
@@ -46,19 +47,20 @@ const App: React.FC = () => {
         // 整个页面
         <main className={'bg-mkmImage absolute bg-130% bg-center bg-no-repeat w-full h-full flex'}>
             {/*增加一个黑色mask*/}
-            <div className={"bg-black bg-opacity-50 w-full h-full absolute bg-cover"}>
+            <div className={"grid grid-flow-row grid-rows-3 bg-black bg-opacity-50 w-full h-full absolute bg-cover"}>
                 {/*鼠标样式*/}
                 <div className={""}></div>
                 {/*内容*/}
                 <HeadMenu/>
-                <div className={'absolute top-[10vh] bottom-0 grid grid-flow-col overflow-x-hidden overscroll-contain my-auto mx-auto'} style={{
+                <div className={'absolute inset-x-0 bottom-4 mx-auto w-3/4 h-3/4 grid grid-flow-col overflow-auto overscroll-contain'} style={{
                     gridAutoColumns: '100%',
                 }}>
-                    <Information/>
-                    <Blog/>
+                    <Home/>
+                    <Information key={'information'}/>
+                    <Blog key={'Blog'}/>
                     <Space/>
-                    <Project/>
-                    <Message/>
+                    {/*<Project/>*/}
+                    {/*<Message/>*/}
 
                 </div>
             </div>
