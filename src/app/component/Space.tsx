@@ -14,7 +14,7 @@ const TalkItems = talk.map((item, index) => <div className={'text-white'} key={i
 </div>)
 const App:React.FC = () => {
     return (
-        <div>
+        <div id="Space">
             {TalkItems}
         </div>
 

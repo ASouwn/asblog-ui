@@ -4,6 +4,15 @@ const blog: BlogContent[] = [
     {title: 'Blog Title', tag: 'Java', content: 'java is the best code should we all do study it', date: '2024-06-12'},
     {title: 'Blog Title', tag: 'Java', content: 'java is the best code should we all do study it', date: '2024-06-12'},
     {title: 'Blog Title', tag: 'Java', content: 'java is the best code should we all do study it', date: '2024-06-12'},
+    {title: 'Blog Title', tag: 'Java', content: 'java is the best code should we all do study it', date: '2024-06-12'},
+    {title: 'Blog Title', tag: 'Java', content: 'java is the best code should we all do study it', date: '2024-06-12'},
+    {title: 'Blog Title', tag: 'Java', content: 'java is the best code should we all do study it', date: '2024-06-12'},
+    {title: 'Blog Title', tag: 'Java', content: 'java is the best code should we all do study it', date: '2024-06-12'},
+    {title: 'Blog Title', tag: 'Java', content: 'java is the best code should we all do study it', date: '2024-06-12'},
+    {title: 'Blog Title', tag: 'Java', content: 'java is the best code should we all do study it', date: '2024-06-12'},
+    {title: 'Blog Title', tag: 'Java', content: 'java is the best code should we all do study it', date: '2024-06-12'},
+    {title: 'Blog Title', tag: 'Java', content: 'java is the best code should we all do study it', date: '2024-06-12'},
+    {title: 'Blog Title', tag: 'Java', content: 'java is the best code should we all do study it', date: '2024-06-12'},
 ]
 const talk: TalkContent[] = [
     {title: 'Talk Title', date: '2024-06-12', content: 'a talk i write'},
@@ -27,15 +36,16 @@ const TalkItems = talk.map((item, index) => <div className={'text-white'} key={i
 const App:React.FC = () => {
     return (
         // 展示个人最近的说说与博客
-        <div className={'bg-white bg-opacity-15'}>
-            {/*展示个人介绍*/}
-            <div>
-                <p className={'text-white'}>个人说明，可以是markdown语句，也可以是图片加文字，个人倾向于支持图片的markdown，方便修改</p>
+        <div id="Information" className={'relative'}>
+            
+            {/*个人展示位置*/}
+            <div className='absolute top-3 left-6 w-1/3 h-1/2 bg-black '>
+                <p className='text-white'>asouwn粒子字符动画效果</p>
             </div>
             {/*博客展示位置*/}
-            <div>{BlogItems}</div>
+            <div className="grid grid-flow-row overflow-auto absolute ml-80 bg-blue-300 w-1/2 h-3/4 ">{BlogItems}</div>
             {/*说说展示位置*/}
-            <div>{TalkItems}</div>
+            <div className="grid grid-flow-row bg-red-300">{TalkItems}</div>
         </div>
 
     )
