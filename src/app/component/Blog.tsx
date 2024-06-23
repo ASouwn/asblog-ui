@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Markdown from 'react-markdown'
 import "github-markdown-css"
-const content = "I’ve written a few thousand words on why traditional “semantic class names” are the reason CSS is hard to maintain, but the truth is you’re never going to believe me until you actually try it. If you can suppress the urge to retch long enough to give it a chance, I really think you’ll wonder how you ever worked with CSS any other way."
+const content = "I've written a few thousand words on why traditional “semantic class names” are the reason CSS is hard to maintain, but the truth is you're never going to believe me until you actually try it. If you can suppress the urge to retch long enough to give it a chance, I really think you’ll wonder how you ever worked with CSS any other way."
 
 const blog: BlogContent[] = [
     { title: 'Blog Title', tag: 'Java', content: content, date: '2024-06-12' },
