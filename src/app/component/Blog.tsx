@@ -22,7 +22,7 @@ const blog: BlogContent[] = [
 const App: React.FC = () => {
     const [blogs, setBlog] = useState<BlogContent[]>(blog)
     useEffect(() => {
-        fetch('${process.env.NEXT_PUBLIC_BACKEND_URL}/blog/list', {
+        fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}/blog/list`, {
             method: 'get'
         }).then(
             res => res.json()
