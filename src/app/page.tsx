@@ -21,15 +21,15 @@ const App: React.FC = () => {
                 {/*鼠标样式*/}
                 <div className={""}></div>
                 {/*内容*/}
-                <div className={'grid grid-flow-row grid-rows-[6.375rem_1fr] h-full'}>
+                <div className={' flex flex-col justify-between '}>
                     <HeadMenu/>
-                    <div className={'grid grid-flow-col auto-cols-[100%] overflow-hidden'}>
+                    <div className={'grid grid-flow-col auto-cols-[100%] overflow-hidden '}>
                         <Index/>
                         <Information/>
                         <Blog/>
                         <Space/>
                         <Project/>
-                        <Message/>
+                        {/* <Message/> */}
                     </div>
                 </div>
             </div>
