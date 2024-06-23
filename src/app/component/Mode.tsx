@@ -1,9 +1,9 @@
 import React from "react";
-
+import Image from "next/image";
 const App:React.FC = () => {
     return (
         <div className="relative box-border p-12">
-            <img src={'/mkm.png'} alt={''}/>
+            <Image src={'/mkm.png'} alt={''}/>
         </div>
 
     )
