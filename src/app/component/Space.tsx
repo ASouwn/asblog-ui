@@ -1,5 +1,6 @@
 import React from "react";
-const content = "I’ve written a few thousand words on why traditional “semantic class names” are the reason CSS is hard to maintain, but the truth is you’re never going to believe me until you actually try it. If you can suppress the urge to retch long enough to give it a chance, I really think you’ll wonder how you ever worked with CSS any other way."
+const content = "I've written a few thousand words on why traditional “semantic class names” are the reason CSS is hard to maintain, but the truth is you're never going to believe me until you actually try it. If you can suppress the urge to retch long enough to give it a chance, I really think you’ll wonder how you ever worked with CSS any other way."
+
 const talk: TalkContent[] = [
     { date: '2024-06-12', content: content },
     { date: '2024-06-12', content: content },
@@ -30,7 +31,7 @@ const App: React.FC = () => {
                     {TalkItems}
                 </div>
                 <div className="overflow-auto h-[46rem] w-[72rem] flex-grow">
-                {content}
+                    {content}
                 </div>
             </div>
         </div>
